@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Saravanakumar D — UX/UI Designer & Product Thinker</title>
+    <meta name="description" content="Portfolio of Saravanakumar D, a product-oriented UX/UI Designer based in Chennai. Designing intuitive, purposeful experiences that bridge user needs and business goals.">
+    <meta name="keywords" content="UX Designer, UI Designer, Product Designer, Portfolio, Chennai, Saravanakumar, Design System, User Research">
+    <meta name="author" content="Saravanakumar D">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://saravanakumar-portfolio.vercel.app/">
+    <meta property="og:title" content="Saravanakumar D — UX/UI Designer">
+    <meta property="og:description" content="Designing experiences that feel inevitable — intuitive, purposeful, and built around real human needs.">
+    <meta property="og:image" content="https://saravanakumar-portfolio.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://saravanakumar-portfolio.vercel.app/">
+    <meta property="twitter:title" content="Saravanakumar D — UX/UI Designer">
+    <meta property="twitter:description" content="Designing experiences that feel inevitable — intuitive, purposeful, and built around real human needs.">
+    <meta property="twitter:image" content="https://saravanakumar-portfolio.vercel.app/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;700&family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+    
+    <!-- Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-ring"></div>
+
+    <!-- Navigation -->
+    <nav id="nav">
+        <a href="#hero" class="nav-logo">S<span>.</span>D</a>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a href="#contact" class="nav-cta">Let's Talk</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-close" id="mobileClose" aria-label="Close Menu">✕</button>
+        <div class="mobile-links">
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#skills" class="mobile-link">Skills</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#experience" class="mobile-link">Experience</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero -->
+    <section id="hero">
+        <div class="hero-canvas-container">
+            <canvas id="hero-canvas"></canvas>
+        </div>
+        <div class="hero-bg-text" id="hero-bg-text">UX</div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-eyebrow-container">
+                    <p class="hero-eyebrow">Available for opportunities</p>
+                </div>
+                <h1 class="hero-name split-text">Saravana<br><span class="accent-text">kumar D</span></h1>
+                <p class="hero-title typewriter" data-words='["UX/UI Designer", "Product Thinker", "Problem Solver"]'></p>
+                <p class="hero-tagline">I design <strong>experiences that feel inevitable</strong> — intuitive, purposeful, and built around real human needs. From research to high-fidelity, I translate complexity into clarity.</p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn-primary magnetic">View My Work</a>
+                    <a href="#contact" class="btn-outline magnetic">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-avatar-wrap">
+                    <div class="hero-dot"></div>
+                    <div class="hero-avatar">
+                        <div class="hero-avatar-initials">SD</div>
+                        <div class="hero-avatar-inner">
+                            <svg class="hero-avatar-icon" viewBox="0 0 200 200" fill="none">
+                                <circle cx="100" cy="72" r="36" stroke="currentColor" stroke-width="3"/>
+                                <path d="M30 180c0-38.66 31.34-70 70-70s70 31.34 70 70" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="hero-badge floating">
+                        <div class="badge-label">Design Focus</div>
+                        <div class="badge-value">UX + UI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Who I Am</p>
+                <h2 class="section-title">Designing with<br>empathy & intention</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>I'm a <strong>product-oriented UX/UI Designer</strong> based in Chennai, India, with a deep belief that great design is invisible — it simply works. My background spans fintech, healthcare, energy, and service platforms, where I've learned that the best experiences emerge at the intersection of user needs and business goals.</p>
+                    <p>I approach every project as a <strong>problem to be solved, not a canvas to be decorated</strong>. That means diving deep into user research, questioning assumptions, and designing with data — then crafting interfaces that feel effortless.</p>
+                    <div class="philosophy-block">
+                        <blockquote>"Design is not what it looks like. Design is how it works — and how it makes people feel."</blockquote>
+                        <cite>— My Design Philosophy</cite>
+                    </div>
+                    <ul class="differentiator-list">
+                        <li>Research-first mindset: every pixel has a reason</li>
+                        <li>Cross-functional collaboration in agile teams</li>
+                        <li>Systems thinking for scalable design patterns</li>
+                        <li>Accessibility and inclusivity from day one</li>
+                    </ul>
+                </div>
+                <div class="about-visual reveal-right">
+                    <div class="about-numbers">
+                        <div class="num-card">
+                            <div class="num" data-target="6">0</div>
+                            <div class="num-label">Projects Delivered</div>
+                        </div>
+                        <div class="num-card">
+                            <div class="num" data-target="10">0</div>
+                            <div class="num-label">Platforms Analyzed</div>
+                        </div>
+                        <div class="num-card">
+                            <div class="num" data-target="4">0</div>
+                            <div class="num-label">Industry Domains</div>
+                        </div>
+                        <div class="num-card">
+                            <div class="num" data-target="100">0</div>
+                            <div class="num-label">User Focus (%)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Capabilities</p>
+                <h2 class="section-title">The toolkit behind<br>the thinking</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">🔍</div>
+                    <div class="skill-category-title">UX Research</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">User Interviews</span>
+                        <span class="skill-tag">Journey Mapping</span>
+                        <span class="skill-tag">Usability Testing</span>
+                        <span class="skill-tag">Heuristic Evaluation</span>
+                        <span class="skill-tag">Competitive Analysis</span>
+                        <span class="skill-tag">A/B Testing</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">✏️</div>
+                    <div class="skill-category-title">UX Design</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">User Flows</span>
+                        <span class="skill-tag">IA</span>
+                        <span class="skill-tag">Wireframing</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Interaction Design</span>
+                        <span class="skill-tag">Accessibility</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">🎨</div>
+                    <div class="skill-category-title">UI Design</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Visual Hierarchy</span>
+                        <span class="skill-tag">Typography</span>
+                        <span class="skill-tag">Design Systems</span>
+                        <span class="skill-tag">Component Design</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">Color Theory</span>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <div class="skill-category-icon">⚙️</div>
+                    <div class="skill-category-title">Tools & Methods</div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Design Handoff</span>
+                        <span class="skill-tag">Product Thinking</span>
+                        <span class="skill-tag">Stakeholder Collab</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <p class="section-tag">Case Studies</p>
+                <h2 class="section-title">Problems solved,<br>experiences crafted</h2>
+                <div class="section-line"></div>
+                <p class="projects-intro">Each project begins with a question: what's broken, who's affected, and what would make it right?</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Dream Step -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-visual" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);">
+                        <div class="project-visual-label">Dream Step</div>
+                        <div class="project-visual-icon">✈️</div>
+                        <span class="project-tag">Featured</span>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-domain">Travel / Web App</p>
+                        <h3 class="project-title">Dream Step Travel Planning</h3>
+                        <p class="project-description">Redesigned the itinerary creation experience into a fluid workflow, reducing cognitive load for travelers.</p>
+                        <div class="project-outcome">↑ Reduced itinerary creation steps by 40% through contextual workflows.</div>
+                        <div class="project-tags">
+                            <span class="tool-chip">Figma</span>
+                            <span class="tool-chip">Research</span>
+                            <span class="tool-chip">Prototyping</span>
+                        </div>
+                        <div class="project-ctas">
+                            <a href="https://www.behance.net/sara0408" target="_blank" class="project-link primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: LIC -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-visual" style="background: linear-gradient(135deg, #0f2027, #203a43);">
+                        <div class="project-visual-label">LIC</div>
+                        <div class="project-visual-icon">🏛️</div>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-domain">Insurance / Web Revamp</p>
+                        <h3 class="project-title">LIC Website Redesign</h3>
+                        <p class="project-description">Improved policy search clarity by restructuring information architecture and navigation flow.</p>
+                        <div class="project-outcome">Heuristic evaluation led to 30% faster policy discovery.</div>
+                        <div class="project-tags">
+                            <span class="tool-chip">Figma</span>
+                            <span class="tool-chip">Heuristics</span>
+                        </div>
+                        <div class="project-ctas">
+                            <a href="https://www.behance.net/sara0408" target="_blank" class="project-link primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: MedBud -->
+                <div class="project-card reveal" data-tilt>
+                    <div class="project-card-visual" style="background: linear-gradient(135deg, #134e5e, #71b280);">
+                        <div class="project-visual-label">MedBud</div>
+                        <div class="project-visual-icon">💊</div>
+                    </div>
+                    <div class="project-card-body">
+                        <p class="project-domain">Healthcare / Mobile App</p>
+                        <h3 class="project-title">MedBud Tracker</h3>
+                        <p class="project-description">Accessibility-focused dashboard helping patients track medications without error.</p>
+                        <div class="project-outcome">Accessibility audit ensured WCAG compliance for elderly users.</div>
+                        <div class="project-tags">
+                            <span class="tool-chip">Figma</span>
+                            <span class="tool-chip">WCAG</span>
+                        </div>
+                        <div class="project-ctas">
+                            <a href="https://www.behance.net/sara0408" target="_blank" class="project-link primary">View Case Study</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More projects can be added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Education -->
+    <section id="experience">
+        <div class="container">
+            <div class="dual-grid">
+                <div class="exp-section reveal-left">
+                    <div class="section-header">
+                        <p class="section-tag">Career</p>
+                        <h2 class="section-title">Experience</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="exp-timeline">
+                        <div class="exp-item">
+                            <h3 class="exp-role">UX/UI Design Intern</h3>
+                            <p class="exp-company">Aspira Design · 2025</p>
+                            <p class="exp-desc">Optimized key web platforms through research-backed design and iterative prototyping.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-section reveal-right">
+                    <div class="section-header">
+                        <p class="section-tag">Learning</p>
+                        <h2 class="section-title">Education</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="edu-grid">
+                        <div class="edu-card">
+                            <p class="edu-type">UX/UI Specialization</p>
+                            <h3 class="edu-degree">Advanced UX Program</h3>
+                            <p class="edu-institution">Aspira Institute · 2025</p>
+                        </div>
+                        <div class="edu-card">
+                            <p class="edu-type">Undergraduate</p>
+                            <h3 class="edu-degree">Bachelor of Business</h3>
+                            <p class="edu-institution">Vels University</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="contact-wrap">
+                <div class="contact-info reveal-left">
+                    <p class="section-tag">Get In Touch</p>
+                    <h2 class="contact-title">Let's build something <span class="accent-text italic">amazing</span> together</h2>
+                    <p class="contact-desc">I'm open to new opportunities, collaborations, and conversations about great design.</p>
+                    <div class="contact-links">
+                        <a href="mailto:sara.designuiux@gmail.com" class="contact-link magnetic">
+                            <span class="icon">✉️</span>
+                            <span class="text">sara.designuiux@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sara0408/" target="_blank" class="contact-link magnetic">
+                            <span class="icon">💼</span>
+                            <span class="text">LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal-right">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required placeholder=" "></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="form-submit btn-primary magnetic">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">S<span>.</span>D</div>
+                <p class="footer-copy">© 2025 Saravanakumar D · UX/UI Designer</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link">Be</a>
+                    <a href="#" class="social-link">Li</a>
+                    <a href="#" class="social-link">Tw</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
