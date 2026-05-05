@@ -28,7 +28,7 @@
       ]
     },
     {
-      "source": "/(styles|script).*",
+      "source": "/(.*).(css|js)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -38,6 +38,6 @@
     }
   ],
   "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/((?!.*\\.).*)", "destination": "/" }
   ]
 }
