@@ -387,18 +387,11 @@ nav.scrolled {
     100% { border-radius: 70% 30% 50% 50% / 30% 60% 40% 70%; }
 }
 
-.hero-avatar-initials {
-    font-size: 8rem;
-    font-weight: 900;
-    opacity: 0.1;
-    font-family: var(--font-sans);
-}
-
-.hero-avatar-inner {
-    position: absolute;
-    width: 60%;
-    color: var(--text-primary);
-    opacity: 0.2;
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 10%;
 }
 
 .hero-badge {
